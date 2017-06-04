@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 #app-prev-css{
     width: 100%;
@@ -20,7 +21,8 @@ body{
     flex-direction: row;
     justify-content: flex-start;
 }
-#app-prev-css .container div{
+#app-prev-css .container select,
+#app-prev-css .container .prev-css{
     width:600px;
 }
 #app-prev-css .tips{
@@ -53,6 +55,7 @@ body{
 }
 #app-prev-css .prev-box{
     height: 600px;
+    width: 600px;
     padding-top: 200px;
 }
 #app-prev-css .prev-box div{
@@ -121,6 +124,78 @@ body{
 }
 #app-prev-css .space2{
     padding-left: 16px;
+}
+@media screen and (max-width:800px) {
+    #app-prev-css .container{
+        width: 100%;
+        margin: 0 auto;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        padding-top: 100px;
+    }
+    #app-prev-css .prev-box{
+        padding-top: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+
+    }
+    #app-prev-css .prev-box div{
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: #c33;
+        border-radius: 4px;
+        background: url(8c314cde6b5bf1a07cb52214af46318f.png) no-repeat;
+        background-size: cover;
+    }
+    #app-prev-css .select-line{
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+    }
+    #app-prev-css .select-line select{
+        width:70% !important;
+        height: 30px;
+        line-height: 30px;
+        outline: none;
+        border: 1px solid #eee;
+        color: #666;
+        cursor: pointer;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+    #app-prev-css .select-line select option{
+        display: inline-block;
+        width: 70%;
+    }
+    #app-prev-css .select-line button{
+        width: 30%;
+        height: 30px;
+        line-height: 30px;
+        color: #666;
+        border: 1px solid #eee;
+        background-color: #fff;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #app-prev-css .container select,
+    #app-prev-css .container .prev-css{
+        width: 100%;
+    }
+    #app-prev-css .prev-css div{
+        font-size: 14px;
+    }
 }
 @charset "UTF-8";
 
